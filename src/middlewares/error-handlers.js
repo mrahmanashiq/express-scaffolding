@@ -1,10 +1,10 @@
-import { Logger } from '../config/index.js';
-import { StatusCodes } from 'http-status-codes';
+const { Logger } = require('../config');
+const { StatusCodes } = require('http-status-codes');
 
 /**
  * Handles 404 errors for routes that don't exist
  */
-export const notFoundHandler = (req, res, next) => {
+const notFoundHandler = (req, res, next) => {
   const errorDetails = {
     method: req.method,
     url: req.originalUrl,
@@ -24,7 +24,7 @@ export const notFoundHandler = (req, res, next) => {
 /**
  * Handles all other uncaught errors
  */
-export const errorHandler = (err, req, res, next) => {
+const errorHandler = (err, req, res, next) => {
   const errorDetails = {
     stack: err.stack,
     method: req.method,
@@ -56,4 +56,9 @@ export const errorHandler = (err, req, res, next) => {
   };
 
   res.status(statusCode).json(response);
+};
+
+module.exports = {
+  notFoundHandler,
+  errorHandler
 };
