@@ -1,4 +1,5 @@
-This is a scaffolding project for Node.js and Express applications. It provides a basic structure and configuration to help you get started quickly with building web applications using Node.js and Express.
+Kickstart your next Node.js + Express project in seconds!
+This scaffolding setup gives you a clean, organized foundation to build powerful web applications without wasting time on boilerplate.
 
 ## Getting Started
 To get started with this scaffolding project, follow these steps:
