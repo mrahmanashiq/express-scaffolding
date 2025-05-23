@@ -1,7 +1,6 @@
 {
   "name": "scaffolding-express",
   "version": "1.0.0",
-  "type": "module",
   "dependencies": {
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
