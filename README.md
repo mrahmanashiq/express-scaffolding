@@ -16,6 +16,7 @@ To get started with this scaffolding project, follow these steps:
 ├── src
 │   ├── config
 │   ├── controllers
+│   ├── db
 │   ├── middlewares
 │   ├── repositories
 │   ├── routes
